@@ -1,0 +1,27 @@
+{
+  "name": "todoList",
+  "version": "0.0.1",
+  "description": "A todolist using cookies to store data permanently",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run start:dev",
+    "start:dev": "nodemon app.js",
+    "start:prod": "cross-env NODE_ENV=production node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yoyote",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "body-parser": "^1.18.2",
+    "cookie-session": "^2.0.0-beta.3",
+    "ejs": "^2.5.7",
+    "morgan": "^1.9.0",
+    "cross-env": "^5.1.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.20.0",
+    "nodemon": "^1.14.1"
+  }
+}
